@@ -1,6 +1,8 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import CardHolder from "./Components/CardHolder";
+import { DraggableProvider } from './Components/DraggableContext';
 
 function App() {
   return (
@@ -18,6 +20,9 @@ function App() {
         >
           Learn React
         </a>
+        <DraggableProvider>
+          <CardHolder />
+        </DraggableProvider>
       </header>
     </div>
   );
