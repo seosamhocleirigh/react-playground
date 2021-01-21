@@ -14,7 +14,7 @@ const CardHolder = () => {
 
             draggableState.draggedComponent.setState({
                 x: draggableState.componentPosition.x + (event.pageX - draggableState.mousePosition.x),
-                y: draggableState.componentPosition.y + ( event.pageY - draggableState.mousePosition.y)
+                y: draggableState.componentPosition.y + (event.pageY - draggableState.mousePosition.y)
             });
         }
     };
@@ -29,7 +29,7 @@ const CardHolder = () => {
     };
 
     return (
-        <div style={{width:500,height:500}} onMouseMove={handleMouseMove} onMouseUp={handleMouseUp}>
+        <div onMouseMove={handleMouseMove} onMouseUp={handleMouseUp}>
             <DraggableCard fillColor={"red"} />
             <DraggableCard fillColor={"blue"} />
         </div>

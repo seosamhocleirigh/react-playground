@@ -38,7 +38,7 @@ class DraggableCard extends React.Component<IProps, I2DCoordinate> {
             });
         };
 
-        return <div style={cardStyle} onMouseDown={handleMouseDown}>{this.state.x}</div>
+        return <div style={cardStyle} onMouseDown={handleMouseDown}>X:{this.state.x}<br />Y:{this.state.y}</div>
     };
 };
 
